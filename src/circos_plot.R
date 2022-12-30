@@ -22,7 +22,7 @@ chordDiagram(mat,grid.col = grid_col, annotationTrack = "grid",
              preAllocateTracks = list(track.height = max(strwidth(unlist(dimnames(mat))))))
 # Twist labels perpendicular to plot
 circos.track(track.index = 1, panel.fun = function(x, y) {
-  circos.text(CELL_META$xcenter, CELL_META$ylim[1], CELL_META$sector.index, 
+  circos.text(CELL_META$xcenter, CELL_META$ylim[1], CELL_META$sector.index,
               facing = "clockwise", niceFacing = TRUE, adj = c(0, 0.5),
               cex=1.2)}, bg.border = NA) # here set bg.border to NA is important
 dev.off()
